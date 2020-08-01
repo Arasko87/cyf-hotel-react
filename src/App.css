@@ -79,3 +79,15 @@ h3 {
   color: red;
   padding: 12px;
 }
+.footAddress {
+  text-align: center;
+  list-style: none;
+}
+.table {
+  width: 950px;
+  height: auto;
+  text-align: center;
+  font-size: smaller;
+  margin: auto;
+  margin-bottom: 25px;
+}

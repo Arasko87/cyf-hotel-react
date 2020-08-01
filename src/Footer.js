@@ -7,7 +7,7 @@ const address = [
 ];
 
 const Footer = () => (
-  <ul>
+  <ul className="footAddress">
     {address.map((props, index) => {
       return <li key={index}>{props}</li>;
     })}
