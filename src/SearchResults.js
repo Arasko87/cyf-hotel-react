@@ -1,7 +1,6 @@
 import React from "react";
 
 const SearchResults = props => {
-  console.log(props);
   return (
     <table className="table table-striped">
       <thead>
@@ -14,7 +13,7 @@ const SearchResults = props => {
           <th scope="col">Room Id</th>
           <th scope="col">Check In Date</th>
           <th scope="col">Check Out Date</th>
-          <th scope="col>">Nights</th>
+          <th scope="col>">Number Of Nights</th>
         </tr>
       </thead>
 
@@ -30,7 +29,6 @@ const SearchResults = props => {
               <td>{booking.roomId}</td>
               <td>{booking.checkInDate}</td>
               <td>{booking.checkOutDate}</td>
-              <td>{booking.checkOutDate.diff(booking.checkInDate, "days")}</td>
             </tr>
           );
         })}

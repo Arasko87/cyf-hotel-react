@@ -2,11 +2,11 @@ import React from "react";
 
 const TouristInfoCards = () => {
   return (
-    <div class="cardBox">
-      <div class="card">
+    <div className="cardBox">
+      <div className="card">
         <h3>Glasgow</h3>
         <img
-          class="card-img-top"
+          className="card-img-top"
           src="https://cimg.visitscotland.com/cms-images/header-images/ois/glasgow?size=md"
           alt="Glasgow city"
         />
@@ -16,20 +16,16 @@ const TouristInfoCards = () => {
           shopping trip to exploring our diverse neighbourhoods and enjoying the
           city's amazing food and drink scene.{" "}
         </p>
-        <div class="card-body">
-          <a
-            class="btn btn-primary"
-            href="https://peoplemakeglasgow.com/"
-            target="_blank"
-          >
+        <div className="card-body">
+          <a className="btn btn-primary" href="https://peoplemakeglasgow.com/">
             Discover More ...
           </a>
         </div>
       </div>
-      <div class="card">
+      <div className="card">
         <h3>Manchester</h3>
         <img
-          class="card-img-top"
+          className="card-img-top"
           src="https://governmentbusiness.co.uk/sites/default/files/william-mccue-508892-unsplash_1.jpg"
           alt="Manchester city"
         />
@@ -39,20 +35,19 @@ const TouristInfoCards = () => {
           things to do and find out what's on, as well as getting inspiration
           for your visit to this fantastic city region.{" "}
         </p>
-        <div class="card-body">
+        <div className="card-body">
           <a
-            class="btn btn-primary"
+            className="btn btn-primary"
             href="https://www.visitmanchester.com/"
-            target="_blank"
           >
             Discover More ...
           </a>
         </div>
       </div>
-      <div class="card">
+      <div className="card">
         <h3>London</h3>
         <img
-          class="card-img-top"
+          className="card-img-top"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBv3YGRbR9HerGnjuQt6eGFGNREVEN69DFiw&usqp=CAU "
           alt="London city"
         />
@@ -62,12 +57,8 @@ const TouristInfoCards = () => {
           tours, restaurants and hotels in London. Plan your trip to London with
           useful traveller information.
         </p>
-        <div class="card-body">
-          <a
-            class="btn btn-primary"
-            href="https://visitlondon.com/"
-            target="_blank"
-          >
+        <div className="card-body">
+          <a className="btn btn-primary" href="https://visitlondon.com/">
             Discover More ...
           </a>
         </div>
