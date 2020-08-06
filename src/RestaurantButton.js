@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function RestaurantButton(props) {
   return (
-    <button onClick={props.orderOnes} className="btn btn-primary">
+    <button onClick={props.addOne} className="btn btn-primary">
       {" "}
       Add
     </button>
