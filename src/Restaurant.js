@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import RestaurantButton from "./RestaurantButton";
+import React from "react";
 import Order from "./Order";
 
 const Restaurant = () => {
@@ -7,7 +6,9 @@ const Restaurant = () => {
     <div>
       <h3>Restaurant Orders</h3>
       <ul>
-        <Order />
+        <Order orderType={"Pizzas"} />
+        <Order orderType={"Salads"} />
+        <Order orderType={"Chocolate cake"} />
       </ul>
     </div>
   );

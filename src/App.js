@@ -6,7 +6,6 @@ import TouristInfoCards from "./TouristInfoCards";
 import Footer from "./Footer";
 import Restaurant from "./Restaurant";
 import "./App.css";
-import RestaurantButton from "./RestaurantButton";
 
 const App = () => {
   return (

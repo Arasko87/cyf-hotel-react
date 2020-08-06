@@ -10,7 +10,7 @@ function Order(props) {
 
   return (
     <li>
-      Pizzas: {orders}
+      {props.orderType}: {orders}
       <RestaurantButton addOne={orderOnes} />
     </li>
   );
