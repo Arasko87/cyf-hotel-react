@@ -91,3 +91,6 @@ h3 {
   margin: auto;
   margin-bottom: 25px;
 }
+.rowSelected {
+  background-color: darkgray !important;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
 
 const SearchResults = props => {
@@ -18,29 +18,40 @@ const SearchResults = props => {
         </tr>
       </thead>
 
-      <tbody>
-        {props.results.map((booking, index) => {
-          return (
-            <tr key={index}>
-              <td>{booking.id}</td>
-              <td>{booking.title}</td>
-              <td>{booking.firstName}</td>
-              <td>{booking.surname}</td>
-              <td>{booking.email}</td>
-              <td>{booking.roomId}</td>
-              <td>{booking.checkInDate}</td>
-              <td>{booking.checkOutDate}</td>
-              <td>
-                {moment(booking.checkOutDate).diff(
-                  moment(booking.checkInDate),
-                  "days"
-                )}
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
+      <tbody>{props.results.map(renderRow)}</tbody>
     </table>
+  );
+};
+
+function renderRow(roomBooking, index) {
+  return <SearchRow key={index} booking={roomBooking} />;
+}
+const SearchRow = props => {
+  const booking = props.booking;
+  const [selected, setSelected] = useState(false);
+  const changeColor = () => {
+    setSelected(!selected);
+  };
+  let selectedClassName;
+  if (selected) {
+    selectedClassName = "rowSelected";
+  } else {
+    selectedClassName = "";
+  }
+  return (
+    <tr onClick={changeColor} className={selectedClassName}>
+      <td>{booking.id}</td>
+      <td>{booking.title}</td>
+      <td>{booking.firstName}</td>
+      <td>{booking.surname}</td>
+      <td>{booking.email}</td>
+      <td>{booking.roomId}</td>
+      <td>{booking.checkInDate}</td>
+      <td>{booking.checkOutDate}</td>
+      <td>
+        {moment(booking.checkOutDate).diff(moment(booking.checkInDate), "days")}
+      </td>
+    </tr>
   );
 };
 
